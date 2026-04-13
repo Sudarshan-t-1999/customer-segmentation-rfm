@@ -25,13 +25,13 @@ Raw Transactions → Data Cleaning → RFM Feature Engineering → Clustering (K
 
 ### 1. Data Cleaning
 - Removed rows with missing `CustomerID`
-- Dropped 'Description' as it is not required for RFM analysis and does not contribute to customer-level aggregation
-- Removed rows with negative and zero values for "Quantity" and "UnitPrice" columns
+- Dropped `Description` as it is not required for RFM analysis and does not contribute to customer-level aggregation
+- Removed rows with negative and zero values for `Quantity` and `UnitPrice` columns
 
 ---
 
 ### 2. Feature Engineering (RFM)
-- Calculated Total Price from Quantity and UnitPrice 
+- Calculated Total Price from `Quantity` and `UnitPrice`
 - Derived the Recency, Frequency and Monetary features from the data using GroupBy function
 
 ---
