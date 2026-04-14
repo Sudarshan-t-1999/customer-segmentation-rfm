@@ -32,13 +32,13 @@ Raw Transactions → Data Cleaning → RFM Feature Engineering → Clustering (K
 
 ### 2. Feature Engineering (RFM)
 - Calculated Total Price from `Quantity` and `UnitPrice`
-- Derived the Recency, Frequency and Monetary features from the data using GroupBy function
+- Aggregated transaction-level data to customer-level using groupby operations to compute Recency, Frequency, and Monetary features
 
 ---
 
 ### 3. Clustering
 - Applied KMeans clustering on standardized RFM features to segment customers into distinct behavioral groups  
-- Selected the optimal number of clusters (K=3) using the Elbow method  
+- Selected the number of clusters (K=3) using the Elbow method 
 - Interpreted clusters based on RFM characteristics:
 
   - **High-Value Customers**: Low recency, high frequency, and high monetary value  
@@ -48,23 +48,29 @@ Raw Transactions → Data Cleaning → RFM Feature Engineering → Clustering (K
 ---
 
 ## 📈 Key Results
-- Segmented ~4300+ customers into 3 distinct behavioral groups  
-- Identified a small segment of high-value customers with significantly higher purchase frequency and spending  
+- Segmented 4338 customers into 3 distinct behavioral groups  
+- Identified a high-value segment comprising <1% of customers contributing ~20% of total revenue  
 - Observed strong inverse relationship between recency and customer value  
 
 ---
 
 ## 💡 Business Insights
-- High-value customers contribute disproportionately to total revenue and should be prioritized for retention strategies  
-- Customers with high recency and low frequency represent churn risk and can be targeted with re-engagement campaigns  
-- Mid-value customers present an opportunity for upselling and increased engagement  
+- High-value customers contribute ~20% of revenue despite being <1% of customers, indicating strong revenue concentration  
+
+- The mid-value segment drives the majority of revenue due to its scale, making it the primary growth lever  
+
+- The low-value segment contributes minimal revenue, suggesting limited ROI from aggressive re-engagement strategies  
+
+- This highlights a trade-off between scale (mid-value customers) and intensity (high-value customers) in revenue generation  
+
+- These findings enable targeted allocation of marketing resources across customer segments to maximize ROI and reduce revenue risk  
 
 ---
 
 ## 📊 Evaluation
-- Cluster quality evaluated using RFM distribution across segments  
-- Verified clear separation between clusters based on customer behavior patterns  
-- Elbow method used to determine optimal number of clusters  
+- Evaluated cluster separation using RFM feature distributions across segments  
+- Observed distinct behavioral differences between clusters in terms of recency, frequency, and monetary values  
+- Used Elbow method as a heuristic to select number of clusters  
 
 ---
 

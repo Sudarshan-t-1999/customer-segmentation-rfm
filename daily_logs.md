@@ -14,3 +14,18 @@ Readme was not filled with the information available
 
 Next step:
 Derive one inference for each cluster
+
+## Date: 14 April 2026
+
+Worked on:
+Completing the final steps
+
+Did:
+Plotting the plots for Cluster share in total Customer base, Cluster share in Total Revenue and 
+writing the interpretations and business insights and updated Readme with final information
+
+Problem solved:
+Connecting clusters to customer base and revenue
+
+Noticed:
+Clustes did not connect with Revenue or Decisions
